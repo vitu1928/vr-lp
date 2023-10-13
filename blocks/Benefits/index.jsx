@@ -1,24 +1,19 @@
 import Section from '../../components/Section';
-import cx from '../../utils/cx';
-import styles from './style.module.scss';
+import styles, { benefit, benefits, header, title, subtitle } from './style.module.scss';
+import benefitsJSON from './benefits.json';
 
 export default function Benefits(p) {
-  const className = cx(
-    styles.container,
-    p.className,
-  );
-
   return (
-    <Section id={p.id} className={className} background={p.background}>
-      <div className={styles.header}>
-        <h2 className={styles.title}>{p.title}</h2>
-        <p className={styles.subtitle}>{p.subtitle}</p>
+    <Section id={p.id} background="alternate">
+      <div className={header}>
+        <h2 className={title}>Headline that describes how your product solves the problem</h2>
+        <p className={subtitle}>Start by defining the pain your customer has right now, for example: clients not paying their invoices. Then write how your solution solves this problem for your customers.</p>
       </div>
 
-      <ul className={styles.benefits}>
-        {p.benefits.map((item, i) => {
+      <ul className={benefits}>
+        {benefitsJSON.map((item, i) => {
           return (
-            <li key={i} className={styles.benefit}>
+            <li key={i} className={benefit}>
               <div className={styles['benefit-illustration']}/>
               <div className={styles['benefit-content']}>
                 <h3 className={styles['benefit-title']}>{item.title}</h3>

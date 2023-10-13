@@ -1,25 +1,20 @@
 import Section from '../../components/Section';
-import cx from '../../utils/cx';
-import styles from './style.module.scss';
+import styles, { header, title, subtitle, feature, features } from './style.module.scss';
+import featuresJSON from './features.json';
 
 export default function Features(p) {
-  const className = cx(
-    styles.container,
-    p.className,
-  );
-
   return (
-    <Section id={p.id} className={className} background={p.background}>
-      <div className={styles.header}>
-        <h2 className={styles.title}>{p.title}</h2>
-        <p className={styles.subtitle}>{p.subtitle}</p>
+    <Section id="features" background="alternate">
+      <div className={header}>
+        <h2 className={title}>But wait, there is more</h2>
+        <p className={subtitle}>Describe the full extent of your product</p>
       </div>
 
-      <ul className={styles.features}>
-        {p.features.map((item, i) => {
+      <ul className={features}>
+        {featuresJSON.map((item, i) => {
           return (
-            <li key={i} className={styles.feature}>
-              <div className={styles['feature-illustration']}/>
+            <li key={i} className={feature}>
+              <div className={styles['feature-illustration']} />
               <div className={styles['feature-content']}>
                 <h3 className={styles['feature-title']}>{item.title}</h3>
                 <p className={styles['feature-text']}>{item.text}</p>

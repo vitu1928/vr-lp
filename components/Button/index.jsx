@@ -1,5 +1,7 @@
+"use client"
+
 import cx from '../../utils/cx';
-import styles from './style.module.scss';
+import styles, { container } from './style.module.scss';
 
 export default function Button(p) {
   const size = p.size ?? 'normal';
@@ -7,7 +9,7 @@ export default function Button(p) {
   const location = p.location ?? 'body';
 
   const className = cx(
-    styles.container,
+    container,
     styles[`container-size-${size}`],
     styles[`container-type-${type}`],
     styles[`container-location-${location}`],

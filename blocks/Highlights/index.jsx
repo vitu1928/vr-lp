@@ -1,24 +1,19 @@
 import Section from '../../components/Section';
-import cx from '../../utils/cx';
-import styles from './style.module.scss';
+import styles, { header, title, subtitle, highlights, highlight } from './style.module.scss';
+import highlightsJSON from './highlights.json';
 
 export default function Highlights(p) {
-  const className = cx(
-    styles.container,
-    p.className,
-  );
-
   return (
-    <Section id={p.id} className={className} background={p.background}>
-      <div className={styles.header}>
-        <h2 className={styles.title}>{p.title}</h2>
-        <p className={styles.subtitle}>{p.subtitle}</p>
+    <Section id={p.id} background={p.background}>
+      <div className={header}>
+        <h2 className={title}>Highlights of your product</h2>
+        <p className={subtitle}>Explain why your solution deserves attention</p>
       </div>
 
-      <ul className={styles.highlights}>
-        {p.highlights.map((item, i) => {
+      <ul className={highlights}>
+        {highlightsJSON.map((item, i) => {
           return (
-            <li key={i} className={styles.highlight}>
+            <li key={i} className={highlight}>
               <div className={styles['highlight-illustration']}/>
               <div className={styles['highlight-content']}>
                 <h3 className={styles['highlight-title']}>{item.title}</h3>

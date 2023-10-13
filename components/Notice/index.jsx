@@ -1,14 +1,8 @@
-import cx from '../../utils/cx';
-import styles from './style.module.scss';
+import { container } from "./style.module.scss"
 
 export default function Notice(p) {
-  const className = cx(
-    styles.container,
-    p.className,
-  );
-
   return (
-    <section id={p.id} className={className}>
+    <section id="subscribed" className={container}>
       {p.children}
     </section>
   )
