@@ -63,7 +63,6 @@ export const metadata = {
 
 export default function Home() {
   return (
-
     <html lang="pt-br">
       <Head>
         <title>Global.product</title>
