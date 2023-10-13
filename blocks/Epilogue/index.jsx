@@ -1,7 +1,7 @@
 import Section from '../../components/Section';
-import SubscribeInput from '../../components/SubscribeInput';
 import cx from '../../utils/cx';
 import styles from './style.module.scss';
+import SubscribeInput from '../../components/SubscribeInput';
 
 export default function Epilogue(p) {
   const className = cx(
