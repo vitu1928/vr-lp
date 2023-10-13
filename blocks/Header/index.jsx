@@ -1,5 +1,3 @@
-"use client"
-
 import Button from '../../components/Button';
 import { content, container } from './style.module.scss';
 

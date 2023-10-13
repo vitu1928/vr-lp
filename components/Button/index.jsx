@@ -1,6 +1,5 @@
 "use client"
 
-import cx from '../../utils/cx';
 import styles, { container } from './style.module.scss';
 
 export default function Button(p) {
@@ -8,13 +7,12 @@ export default function Button(p) {
   const type = p.type ?? 'primary';
   const location = p.location ?? 'body';
 
-  const className = cx(
+  const className = [
     container,
     styles[`container-size-${size}`],
     styles[`container-type-${type}`],
-    styles[`container-location-${location}`],
-    p.className,
-  );
+    styles[`container-location-${location}`]
+  ].join(" ")
 
   if (p.href) {
     return (
