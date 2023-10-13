@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from 'next/head';
 import Benefits from '../blocks/Benefits';
 import Break from '../blocks/Break';
 import Epilogue from '../blocks/Epilogue';
@@ -8,7 +8,7 @@ import Header from '../blocks/Header';
 import Hero from '../blocks/Hero';
 import Highlights from '../blocks/Highlights';
 import Notice from '../components/Notice';
-import * as Global from '../global/global.json';
+// import * as Global from '../global/global.json';
 
 const LOREM = `
   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -21,12 +21,12 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>{Global.product}</title>
+        <title>Global.product</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Notice id="subscribed">Thank you for subscribing</Notice>
-      <Header id="top" title={Global.product}/>
+      <Header id="top" title="{Global.product}"/>
 
       <main>
         <Hero
@@ -90,7 +90,7 @@ export default function Home() {
       </main>
 
       <Footer
-        title={Global.product}
+        title="{Global.product}"
       />
     </div>
   )

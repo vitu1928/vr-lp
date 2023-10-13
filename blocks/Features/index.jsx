@@ -1,19 +1,8 @@
-import styles from './Features.module.css';
-import Section from '../components/Section';
-import cx from '../utils/cx';
+import Section from '../../components/Section';
+import cx from '../../utils/cx';
+import styles from './style.module.scss';
 
-export default function Features(p: {
-  id?: string,
-  className?: string,
-  title: string,
-  subtitle: string,
-  features: {
-    title: string,
-    text: string,
-    illustration: string,
-  }[],
-  background?: 'normal' | 'alternate',
-}) {
+export default function Features(p) {
   const className = cx(
     styles.container,
     p.className,

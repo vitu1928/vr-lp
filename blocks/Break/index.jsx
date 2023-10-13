@@ -1,18 +1,9 @@
-import styles from './Break.module.css';
-import Section from '../components/Section';
-import cx from '../utils/cx';
-import Button from '../components/Button';
+import Button from '../../components/Button';
+import Section from '../../components/Section';
+import cx from '../../utils/cx';
+import styles from './style.module.scss';
 
-export default function Break(p: {
-  id?: string,
-  className?: string,
-  title: string,
-  subtitle: string,
-  illustration: string,
-  action?: string,
-  actionHref?: string,
-  onActionClick?(): void,
-}) {
+export default function Break(p) {
   const className = cx(
     styles.container,
     p.className,

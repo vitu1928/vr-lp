@@ -1,15 +1,8 @@
-import styles from './Header.module.css';
-import Button from '../components/Button';
-import cx from '../utils/cx';
+import Button from '../../components/Button';
+import cx from '../../utils/cx';
+import styles from './style.module.scss';
 
-export default function Header(p: {
-  id?: string,
-  className?: string,
-  title: string,
-  action?: string,
-  actionHref?: string,
-  onActionClick?(): void,
-}) {
+export default function Header(p) {
   const id = p.id ?? 'top';
 
   const className = cx(

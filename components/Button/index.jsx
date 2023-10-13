@@ -1,15 +1,7 @@
-import styles from './Button.module.css';
-import cx from '../utils/cx';
+import cx from '../../utils/cx';
+import styles from './style.module.scss';
 
-export default function Button(p: {
-  size?: 'large' | 'normal',
-  type?: 'primary' | 'secondary',
-  location?: 'body' | 'accent',
-  href?: string,
-  onClick?(): void,
-  className?: string,
-  children: React.ReactNode,
-}) {
+export default function Button(p) {
   const size = p.size ?? 'normal';
   const type = p.type ?? 'primary';
   const location = p.location ?? 'body';

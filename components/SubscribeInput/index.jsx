@@ -1,13 +1,8 @@
-import styles from './SubscribeInput.module.css';
-import Button from './Button';
-import cx from '../utils/cx';
+import cx from '../../utils/cx';
+import Button from '../Button';
+import styles from './style.module.scss';
 
-export default function SubscribeInput(p: {
-  location?: 'body' | 'accent',
-  className?: string,
-  action?: string,
-  placeholder?: string,
-}) {
+export default function SubscribeInput(p) {
   const action = p.action ?? 'Join early access';
   const placeholder = p.placeholder ?? 'you@company.com';
   const location = p.location ?? 'body';

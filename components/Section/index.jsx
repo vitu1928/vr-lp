@@ -1,13 +1,7 @@
-import styles from './Section.module.css';
-import cx from '../utils/cx';
+import cx from '../../utils/cx';
+import styles from './style.module.scss';
 
-export default function Section(p: {
-  id?: string,
-  className?: string,
-  size?: 'normal' | 'narrow',
-  background?: 'normal' | 'alternate' | 'accent',
-  children: React.ReactNode,
-}) {
+export default function Section(p) {
   const size = p.size ?? 'normal';
   const background = p.background ?? 'normal';
 

@@ -1,15 +1,8 @@
-import styles from './Footer.module.css';
-import Button from '../components/Button';
-import cx from '../utils/cx';
+import Button from '../../components/Button';
+import cx from '../../utils/cx';
+import styles from './style.module.scss';
 
-export default function Footer(p: {
-  id?: string,
-  className?: string,
-  title: string,
-  action?: string,
-  actionHref?: string,
-  onActionClick?(): void,
-}) {
+export default function Footer(p) {
   const className = cx(
     styles.container,
     p.className,

@@ -1,17 +1,9 @@
-import styles from './Epilogue.module.css';
-import Section from '../components/Section';
-import cx from '../utils/cx';
-import SubscribeInput from '../components/SubscribeInput';
+import Section from '../../components/Section';
+import SubscribeInput from '../../components/SubscribeInput';
+import cx from '../../utils/cx';
+import styles from './style.module.scss';
 
-export default function Epilogue(p: {
-  id?: string,
-  className?: string,
-  title: string,
-  subtitle: string,
-  illustration: string,
-  subscribePlaceholder?: string,
-  subscribeAction?: string,
-}) {
+export default function Epilogue(p) {
   const className = cx(
     styles.container,
     p.className,
