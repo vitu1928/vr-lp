@@ -7,8 +7,6 @@ import Footer from '../blocks/Footer';
 import Header from '../blocks/Header';
 import Hero from '../blocks/Hero';
 import Highlights from '../blocks/Highlights';
-import Notice from '../components/Notice';
-// import * as Global from '../global/global.json';
 import '../global/global.scss'
 
 export const metadata = {
@@ -19,7 +17,7 @@ export const metadata = {
   referrer: 'origin-when-cross-origin',
   keywords: ['VR', 'Currículo', 'curriculum'],
   authors: [
-    { name: 'Victor Garcia Torrens', url: "https://github.com/vitu1928"},
+    { name: 'Victor Garcia Torrens', url: "https://github.com/vitu1928" },
     { name: 'Yuri Garcia Torrens', url: 'https://trello.com/u/yurigarciatorrens/' },
     { name: 'Vanessa Rebouças Garcia', url: 'https://wa.me/5511956600892' }
 
@@ -55,7 +53,7 @@ export const metadata = {
   },
 
 }
- 
+
 // // or Dynamic metadata
 // export async function generateMetadata({ params }) {
 //   return {
@@ -65,28 +63,23 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <>
+
+    <html lang="pt-br">
       <Head>
         <title>Global.product</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      {/* <Notice>Thank you for subscribing</Notice> */}
-      <Header/>
-
+      <Header />
       <main>
-        <Hero/>
-        <Benefits/>
-        <Break/>
-        <Highlights/>
+        <Hero />
+        <Benefits />
+        <Break />
+        <Highlights />
         <Features />
-        <Epilogue/>
+        <Epilogue />
       </main>
-
-      <Footer
-        title="{Global.product}"
-      />
-    </>
+      <Footer />
+    </html>
   )
 }
 // 
