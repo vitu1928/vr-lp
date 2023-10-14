@@ -5,7 +5,7 @@
 .header {
   max-width: var(--section-header-max-width);
   margin: 0 auto;
-  margin-bottom: 64px;
+  margin-bottom: 6vh;
 }
 
 .title {
@@ -45,9 +45,10 @@
 }
 
 .highlight-illustration {
-  width: 100%;
-  max-width: 450px;
-  min-height: 300px;
+  min-width: 30vw;
+  max-width: 100%;
+  max-height: 50vh;
+  min-height: 20vh;
   background: #eee;
   border-radius: 8px;
 }

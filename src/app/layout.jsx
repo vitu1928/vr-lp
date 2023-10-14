@@ -65,9 +65,9 @@ export default function Home() {
       <main>
         <Hero />
         <Benefits />
-        <Break />
+        {/* <Break /> */}
         <Highlights />
-        <Features />
+        {/* <Features /> */}
         <Epilogue />
       </main>
       <Footer />

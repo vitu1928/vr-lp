@@ -3,9 +3,9 @@
 }
 
 .header {
-  max-width: var(--section-header-max-width);
+  // max-width: var(--section-header-max-width);
   margin: 0 auto;
-  margin-bottom: 64px;
+  margin-bottom: 6vh;
 }
 
 .title {
@@ -33,11 +33,10 @@
 }
 
 .benefit {
-  max-width: var(--list-item-max-width);
-  margin: 0 auto;
+  // max-width: var(--list-item-max-width);
 }
 .benefit:not(:last-child) {
-  margin-bottom: 48px;
+  margin-bottom: 2vh;
 }
 
 .benefit-illustration {
@@ -66,7 +65,9 @@
   .benefits {
     display: flex;
     align-items: stretch;
-    justify-content: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
   }
   .benefit {
     flex: 1 1 0;
