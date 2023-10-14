@@ -12,6 +12,7 @@
   font-size: var(--h1-font-size);
   font-weight: var(--h1-font-weight);
   line-height: var(--h1-line-height);
+  font-family: var(--h1-font-family);
   letter-spacing: var(--h1-letter-spacing);
   text-align: center;
   margin-bottom: 16px;
@@ -22,6 +23,7 @@
   font-weight: var(--body-font-weight);
   line-height: var(--body-line-height);
   letter-spacing: var(--body-letter-spacing);
+  font-family: var(--body-font-family);
   text-align: center;
   color: var(--text-shade);
 }
@@ -61,6 +63,7 @@
   font-size: var(--h2-font-size);
   font-weight: var(--h2-font-weight);
   line-height: var(--h2-line-height);
+  font-family: var(--h2-font-family);
   letter-spacing: var(--h2-letter-spacing);
   margin-bottom: 16px;
 }
