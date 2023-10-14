@@ -9,10 +9,10 @@ export default function SubscribeInput(p) {
   const location = p.location ?? 'body';
 
   return (
-    <div className={[container,styles[`container-location-${location}`]].join(" ")}>
+    <div className={[container, styles[`container-location-${location}`]].join(" ")}>
       <input 
         className={input}
-        placeholder='Posso fazer um orçamento?'
+        placeholder='Faça seu orçamento já!'
         onChange={(e) => setWppText(`https://wa.me/5511956600892?text=${encodeURIComponent(e.target.value)}`) }
       />
       <a href={wppText} rel='_external' target='_blank'>

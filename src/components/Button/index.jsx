@@ -11,7 +11,8 @@ export default function Button(p) {
     container,
     styles[`container-size-${size}`],
     styles[`container-type-${type}`],
-    styles[`container-location-${location}`]
+    styles[`container-location-${location}`],
+    p.className
   ].join(" ")
 
   if (p.href) {

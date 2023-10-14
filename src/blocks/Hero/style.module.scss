@@ -1,11 +1,20 @@
 .container {
   padding-top: 140px !important;
+  height: 100%;
 }
 
 .header {
   max-width: var(--section-header-max-width);
   margin: 0 auto;
   margin-bottom: 6vh;
+  color: white;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 
 .title {
@@ -37,15 +46,26 @@
   width: 100%;
   height: 500px;
   background: #eee;
-  border-radius: 8px;
+  
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-image: url("../../../public/Images/tilografar.png");
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0px -5px 20px 0px #0000002b;
+
+  > div {
+    height: 100%;
+  }
+
 }
 
 .typewriter {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid var(--accent); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: .1em solid var(--accent); /* The typwriter cursor */
+  // white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .1em; /* Adjust as needed */
   animation: 
     typing 4.5s steps(40, end),
     blink-caret .75s step-end infinite;
@@ -53,10 +73,11 @@
 
 .typewriterParagraph {
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid var(--accent); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
+  border-right: .1em solid var(--accent); /* The typwriter cursor */
+  // white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .1em; /* Adjust as needed */
+  color: white;
   animation: 
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;

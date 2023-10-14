@@ -1,7 +1,8 @@
-import Benefits from '@blocks/Benefits';
 import Break from '@blocks/Break';
-import Epilogue from '@blocks/Epilogue';
 import Features from '@blocks/Features';
+
+import Benefits from '@blocks/Benefits';
+import Epilogue from '@blocks/Epilogue';
 import Footer from '@blocks/Footer';
 import Header from '@blocks/Header';
 import Hero from '@blocks/Hero';
@@ -63,6 +64,7 @@ export default function Home() {
     <html lang="pt-br">
       <Header />
       <main>
+        
         <Hero />
         <Benefits />
         {/* <Break /> */}
