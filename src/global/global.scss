@@ -1,15 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap');
 
+@font-face {
+  font-family: 'Typewrite';
+  src: url('../../public/Fonts/Typewriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 
-  --page-padding: 24px;
-  --page-max-width: 1000px;
+  --page-padding: 2vw;
+  --page-max-width: 90vw;
   --page-responsive-desktop: 800px;
-  --page-header-height: 64px;
+  --page-header-height: 10vh;
   --page-footer-height: 64px;
-  --section-header-max-width: 650px;
+  --section-header-max-width: 60vw;
   --list-item-max-width: 450px;
 
   --background: #fff;
@@ -21,37 +29,44 @@
   --text-shade: #333A;
   --text-accent: #fff;
   --text-accent-shade: #fffA;
-  --accent: #a6d5a5;
+  --accent: #bdaca8;
 
-  --body-font-size: 16px;
+  --body-font-size: clamp(2.1vh, 1.3vw, 2.5vw);
   --body-font-weight: 400;
   --body-line-height: 1.6;
-  --body-letter-spacing: -0.3px;
+  --body-letter-spacing: 0;
+  --body-font-family: 'Typewrite';
 
-  --title-font-size: 48px;
+  --title-font-size: clamp(5vw, 5vh, 4vh);
   --title-font-weight: 800;
   --title-line-height: 1;
-  --title-letter-spacing: -2px;
+  --title-letter-spacing: 0;
+  --title-font-family: 'Typewrite';
 
-  --subtitle-font-size: 21px;
+  --subtitle-font-size: max(2vw, 3vh);
   --subtitle-font-weight: 400;
   --subtitle-line-height: 1.5;
-  --subtitle-letter-spacing: -0.8px;
+  --subtitle-letter-spacing: 0;
+  --subtitle-font-family: 'Typewrite';
 
-  --h1-font-size: 38px;
+  --h1-font-size: clamp(3vw, 3vh, 4vh);
   --h1-font-weight: 700;
   --h1-line-height: 1;
-  --h1-letter-spacing: -1px;
+  --h1-letter-spacing: 0;
+  --h1-font-family: 'Typewrite';
 
-  --h2-font-size: 26px;
+  --h2-font-size: clamp(2.5w, 2.5vh, 3.5vh);
   --h2-font-weight: 500;
   --h2-line-height: 1;
-  --h2-letter-spacing: -1px;
+  --h2-letter-spacing: 0;
+  --h2-font-family: 'Typewrite';
 
-  --h3-font-size: 21px;
+  --h3-font-size: clamp(2w, 2vh, 3vh);
   --h3-font-weight: 500;
   --h3-line-height: 1;
-  --h3-letter-spacing: -0.6px;
+  --h3-letter-spacing: 0;
+  --h3-font-family: 'Typewrite';
+
 }
 
 * {
@@ -69,6 +84,7 @@ body {
   letter-spacing: var(--body-letter-spacing);
   color: var(--text);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 a {
@@ -76,14 +92,27 @@ a {
   text-decoration: none;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
-button, input {
+button,
+input {
   color: inherit;
   font-family: inherit;
   font-size: inherit;
   margin: 0;
   padding: 0;
+  // border-radius: 50px;
+  background: #e0e0e0;
+}
+
+ul, li {
+  list-style-type: none;
 }

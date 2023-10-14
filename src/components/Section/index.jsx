@@ -6,7 +6,8 @@ export default function Section(p) {
       [
         container,
         styles[`container-size-normal`],
-        styles[`container-background-normal`]
+        styles[`container-background-normal`],
+        p.className
       ].join(" ")
     }>
       <div className={content}>

@@ -1,7 +1,7 @@
 .container {
   height: var(--page-header-height);
   margin-bottom: calc(-1 * var(--page-header-height));
-  padding: 16px var(--page-padding);
+  padding: 2vh var(--page-padding);
 }
 
 .content {
@@ -13,3 +13,10 @@
   justify-content: space-between;
 }
 
+.vr {
+  font-family: fantasy;
+  font-size: var(--title-font-size);
+  margin-top: 5vh;
+  color: white;
+  text-shadow: 0px 0px 14px #0000005c;
+}
