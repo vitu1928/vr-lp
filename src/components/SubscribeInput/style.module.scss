@@ -4,8 +4,8 @@
   align-items: stretch;
   box-shadow: 0 4px 18px #0002;
   border-radius: 7px;
-  padding: 4px;
-  background: #fffd;
+  padding: 0.5vw;
+  // background: #fff;
   overflow: hidden;
 
   a {
@@ -24,9 +24,11 @@
   margin-right: 4px;
   text-align: center;
   color: var(--text);
-  background: transparent;
+  background: white;
   border-radius: 4px;
   border: none;
+  box-shadow: inset -6px -6px 12px #acacac, inset 6px 6px 12px #ffffff;
+
 
   @media screen and (max-width: 430px) {
     display: none;

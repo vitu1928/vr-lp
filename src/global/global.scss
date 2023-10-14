@@ -29,7 +29,7 @@
   --text-shade: #333A;
   --text-accent: #fff;
   --text-accent-shade: #fffA;
-  --accent: #a6d5a5;
+  --accent: #bdaca8;
 
   --body-font-size: clamp(2.1vh, 1.3vw, 2.5vw);
   --body-font-weight: 400;
@@ -37,7 +37,7 @@
   --body-letter-spacing: 0;
   --body-font-family: 'Typewrite';
 
-  --title-font-size: clamp(3vw, 3vh, 4vh);
+  --title-font-size: clamp(5vw, 5vh, 4vh);
   --title-font-weight: 800;
   --title-line-height: 1;
   --title-letter-spacing: 0;
@@ -111,6 +111,8 @@ input {
   padding: 0;
   // border-radius: 50px;
   background: #e0e0e0;
-  box-shadow: 20px 20px 60px #b6a59e, -20px -20px 60px #1d4458;
+}
 
+ul, li {
+  list-style-type: none;
 }
