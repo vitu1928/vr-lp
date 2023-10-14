@@ -1,13 +1,12 @@
-import Head from 'next/head';
-import Benefits from '../blocks/Benefits';
-import Break from '../blocks/Break';
-import Epilogue from '../blocks/Epilogue';
-import Features from '../blocks/Features';
-import Footer from '../blocks/Footer';
-import Header from '../blocks/Header';
-import Hero from '../blocks/Hero';
-import Highlights from '../blocks/Highlights';
-import '../global/global.scss'
+import Benefits from '@blocks/Benefits';
+import Break from '@blocks/Break';
+import Epilogue from '@blocks/Epilogue';
+import Features from '@blocks/Features';
+import Footer from '@blocks/Footer';
+import Header from '@blocks/Header';
+import Hero from '@blocks/Hero';
+import Highlights from '@blocks/Highlights';
+import '../global/global.scss';
 
 export const metadata = {
   title: 'VR Currículo',
@@ -20,7 +19,6 @@ export const metadata = {
     { name: 'Victor Garcia Torrens', url: "https://github.com/vitu1928" },
     { name: 'Yuri Garcia Torrens', url: 'https://trello.com/u/yurigarciatorrens/' },
     { name: 'Vanessa Rebouças Garcia', url: 'https://wa.me/5511956600892' }
-
   ],
   colorScheme: 'white',
   creator: 'Vaness Rebouças Garcia',
@@ -50,8 +48,7 @@ export const metadata = {
     ],
     locale: 'pt_BR',
     type: 'profile',
-  },
-
+  }
 }
 
 // // or Dynamic metadata
@@ -64,10 +61,6 @@ export const metadata = {
 export default function Home() {
   return (
     <html lang="pt-br">
-      <Head>
-        <title>Global.product</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <Header />
       <main>
         <Hero />

@@ -1,6 +1,6 @@
-import Section from '../../components/Section';
-import SubscribeInput from '../../components/SubscribeInput';
-import { header, title, subtitle, subscribe, illustration, container } from './style.module.scss';
+import Section from '@components/Section';
+import SubscribeInput from '@components/SubscribeInput';
+import { container, header, illustration, subscribe, subtitle, title } from './style.module.scss';
 
 export default function Epilogue() {
   return (

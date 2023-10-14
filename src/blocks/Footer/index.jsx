@@ -1,4 +1,4 @@
-import Button from '../../components/Button';
+import Button from '@components/Button';
 import { content } from './style.module.scss';
 
 export default function Footer(p) {

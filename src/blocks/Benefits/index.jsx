@@ -1,6 +1,6 @@
-import Section from '../../components/Section';
-import styles, { benefit, benefits, header, title, subtitle } from './style.module.scss';
+import Section from '@components/Section';
 import benefitsJSON from './benefits.json';
+import styles, { benefit, benefits, header, subtitle, title } from './style.module.scss';
 
 export default function Benefits(p) {
   return (

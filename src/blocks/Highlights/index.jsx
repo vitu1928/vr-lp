@@ -1,6 +1,6 @@
-import Section from '../../components/Section';
-import styles, { header, title, subtitle, highlights, highlight } from './style.module.scss';
+import Section from '@components/Section';
 import highlightsJSON from './highlights.json';
+import styles, { header, highlight, highlights, subtitle, title } from './style.module.scss';
 
 export default function Highlights(p) {
   return (

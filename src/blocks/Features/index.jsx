@@ -1,6 +1,6 @@
-import Section from '../../components/Section';
-import styles, { header, title, subtitle, feature, features } from './style.module.scss';
+import Section from '@components/Section';
 import featuresJSON from './features.json';
+import styles, { feature, features, header, subtitle, title } from './style.module.scss';
 
 export default function Features(p) {
   return (

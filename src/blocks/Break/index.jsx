@@ -1,6 +1,6 @@
-import Button from '../../components/Button';
-import Section from '../../components/Section';
-import { content, illustration, header, title, subtitle } from './style.module.scss';
+import Button from '@components/Button';
+import Section from '@components/Section';
+import { content, header, illustration, subtitle, title } from './style.module.scss';
 
 export default function Break(p) {
   return (
