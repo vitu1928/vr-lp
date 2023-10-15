@@ -6,8 +6,8 @@ export default function Highlights(p) {
   return (
     <Section id={p.id} background={p.background}>
       <div className={header}>
-        <h2 className={title}>Highlights of your product</h2>
-        <p className={subtitle}>Explain why your solution deserves attention</p>
+        <h2 className={title}>Deixe seu Currículo Falar por Você</h2>
+        <p className={subtitle}>Design Personalizado</p>
       </div>
 
       <ul className={highlights}>
