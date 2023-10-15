@@ -6,7 +6,7 @@ export default function Benefits(p) {
   return (
     <Section id={p.id} background="alternate">
       <div className={header}>
-        <h2 className={title}>Lapidamos seu currículo para uma boa efetivação</h2>
+        <h2 className={title}>O que podemos fazer por você?</h2>
         <p className={subtitle}>Start by defining the pain your customer has right now, for example: clients not paying their invoices. Then write how your solution solves this problem for your customers.</p>
       </div>
 
