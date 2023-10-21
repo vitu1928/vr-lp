@@ -7,7 +7,7 @@ import Footer from '@blocks/Footer';
 import Header from '@blocks/Header';
 import Hero from '@blocks/Hero';
 import Highlights from '@blocks/Highlights';
-import Whatsappfixed from '@components/whtsappfixed'
+import Whatsappfixed from '@components/WhatsappFixed'
 import '../global/global.scss';
 
 export const metadata = {
