@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <Section id="hero" className={illustration}>
       <div className={header}>
-        <h1 className={[title, typewriter].join(" ")}>Destaque suas Conquistas: Currículos Profissionais</h1>
+        <h1 className={[title, typewriter].join(" ")}>Aumente a taxa de aprovação em processos seletivos com um currículo personalizado e profissional</h1>
         {/* <p className={[subtitle, typewriterParagraph].join(" ")}>Pronto em até uma semana</p> */}
         <SubscribeInput className={subscribe} placeholder="you@email.com" action="When is it ready?" />
       </div>

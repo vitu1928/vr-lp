@@ -7,6 +7,7 @@ import Footer from '@blocks/Footer';
 import Header from '@blocks/Header';
 import Hero from '@blocks/Hero';
 import Highlights from '@blocks/Highlights';
+import Whatsappfixed from '@components/whtsappfixed'
 import '../global/global.scss';
 
 export const metadata = {
@@ -36,14 +37,14 @@ export const metadata = {
     siteName: 'VR Currículo',
     images: [
       {
-        url: 'https://nextjs.org/og.png',
-        width: 800,
-        height: 600,
+        url: 'Images/pen.avif',
+        width: 900,
+        height: 500,
       },
       {
-        url: 'Images/profileOpengraph.jpg',
-        width: 1400,
-        height: 300,
+        url: 'Images/tilografar.png',
+        width: 1900,
+        height: 1700,
         alt: 'My custom alt',
       },
     ],
@@ -64,7 +65,7 @@ export default function Home() {
     <html lang="pt-br">
       <Header />
       <main>
-        
+        <Whatsappfixed />
         <Hero />
         <Benefits />
         {/* <Break /> */}
