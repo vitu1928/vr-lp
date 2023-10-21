@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Button from '../Button';
-import styles, { container, button, input } from './style.module.scss';
+import styles, { container, button } from './style.module.scss';
 
 export default function SubscribeInput(p) {
   const [wppText, setWppText] = useState(`https://wa.me/5511956600892?text=${encodeURIComponent("Obtenha Seu Currículo profissional Agora")}`)
