@@ -6,7 +6,7 @@ import Whatsapp from "../../../public/Images/whatsapp.png"
 
 export default function Whatsappfixed() {
     return (
-        <a className={WhatsappFixedS} href="https://api.whatsapp.com/send?phone=5521964043012">
+        <a className={WhatsappFixedS} href="https://api.whatsapp.com/send?phone=5511956600892">
             <div>
                 <Image
                     src={Whatsapp}

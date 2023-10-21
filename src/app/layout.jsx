@@ -64,8 +64,8 @@ export default function Home() {
   return (
     <html lang="pt-br">
       <Header />
-      <main>
         <Whatsappfixed />
+      <main>
         <Hero />
         <Benefits />
         {/* <Break /> */}
