@@ -5,7 +5,6 @@ export default function Header(p) {
     <header id='top' className={container}>
       <div className={content}>
         <div title="VR" className={vr}>VR</div>
-        
       </div>
     </header>
   );

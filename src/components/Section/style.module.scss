@@ -28,4 +28,29 @@
 .content {
   max-width: var(--page-max-width);
   margin: 0 auto;
+  
+  h2 {
+    width: 100vw;
+  }
+
+  h2:before,
+  h2:after {
+    background-color: var(--accent);
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 40%;
+  }
+
+  h2:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+
+  h2:after {
+    left: 0.5em;
+
+  }
 }

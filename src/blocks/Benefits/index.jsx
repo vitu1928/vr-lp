@@ -14,7 +14,9 @@ export default function Benefits(p) {
         {benefitsJSON.map((item, i) => {
           return (
             <li key={i} className={benefit}>
-              <div className={styles['benefit-illustration']}/>
+              <div className={styles['benefit-illustration']} style={{
+                backgroundImage: `url(${item.illustration})`
+              }}/>
               <div className={styles['benefit-content']}>
                 <h3 className={styles['benefit-title']}>{item.title}</h3>
                 <p className={styles['benefit-text']}>{item.text}</p>
