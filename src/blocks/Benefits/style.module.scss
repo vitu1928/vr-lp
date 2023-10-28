@@ -55,10 +55,11 @@
     border-bottom-right-radius: 20px;
 
     background-color: #eee;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+
     
+    background-position: center ;
+    background-size: cover;
+
     box-shadow: inset 0px 0px 64px 2px #00000014;
     background-repeat: no-repeat;
     border: 4px dashed var(--accent);
@@ -86,6 +87,11 @@
   }
 
   @media screen and (min-width: 800px) {
+    .benefit-illustration {
+      background-attachment: fixed !important;
+      background-size: contain !important;
+    }
+
     .benefits {
       display: flex;
       align-items: stretch;

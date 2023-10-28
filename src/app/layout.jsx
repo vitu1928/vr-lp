@@ -45,8 +45,20 @@ export const metadata = {
         url: 'Images/tilografar.png',
         width: 1900,
         height: 1700,
-        alt: 'My custom alt',
+        alt: 'Máquina de tilografar',
       },
+      {
+        url: 'android-chrome-512x512.png',
+        width: 512,
+        height: 512,
+        alt: 'Logo da VR Currículo',
+      },
+      {
+        url: 'favicon.ico',
+        width: 128,
+        height: 128,
+        alt: 'Logo da VR Currículo',
+      }
     ],
     locale: 'pt_BR',
     type: 'profile',

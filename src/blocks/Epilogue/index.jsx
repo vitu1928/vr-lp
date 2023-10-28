@@ -11,7 +11,7 @@ export default function Epilogue() {
         {/* <Image src={professionalDesign} alt="Professional Design" layout='responsive' width={50} height={50}/> */}
       </div>
       <div className={header}>
-        <h2 className={title}>Otimizado para Sucesso</h2>
+        <h2 className={title}>Otimizado para o Sucesso</h2>
         <div className={subtitle}>Comece hoje a investir em seu sucesso profissional. Vamos criar um currículo que o destaque, abrindo portas e criando oportunidades. Sua carreira merece isso. Você merece isso.</div>
         <SubscribeInput className={subscribe} location="accent" placeholder="you@email.com" action="When is it ready?" />
       </div>

@@ -8,5 +8,17 @@
     "purpose": "any maskable",
     "theme_color": "#C5C471",
     "background_color": "#D7DEEA",
-    "display": "standalone"
+    "display": "standalone",
+    "icons": [
+        {
+          "src": "android-chrome-512x512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+        },
+        {
+          "src": "favicon.ico",
+          "sizes": "128x128",
+          "type": "image/png"
+        }
+      ]
 }

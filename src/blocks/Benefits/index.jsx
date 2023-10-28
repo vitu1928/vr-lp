@@ -15,7 +15,8 @@ export default function Benefits(p) {
           return (
             <li key={i} className={benefit}>
               <div className={styles['benefit-illustration']} style={{
-                backgroundImage: `url(${item.illustration})`
+                backgroundImage: `url(${item.illustration})`,
+                backgroundPosition: item.position,
               }}/>
               <div className={styles['benefit-content']}>
                 <h3 className={styles['benefit-title']}>{item.title}</h3>

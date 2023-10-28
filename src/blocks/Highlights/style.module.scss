@@ -53,6 +53,10 @@
   min-height: 20vh;
   background: #eee;
   border-radius: 8px;
+
+  border-right: 6px solid var(--accent);
+  border-left: 6px solid var(--accent);
+  // box-shadow: -15px -14px 2px 0px #0000004d;
 }
 
 .highlight-content {

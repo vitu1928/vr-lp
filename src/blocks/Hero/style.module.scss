@@ -35,10 +35,6 @@
   p {
     text-align: start
   }
-  
-  h1 {
-    flex: 1 1;
-  }
 }
 
 .title {
@@ -48,7 +44,7 @@
   letter-spacing: var(--title-letter-spacing);
   font-family: var(--title-font-family);
   text-align: center;
-  margin-bottom: 21px;
+  // margin-bottom: 21px;
 }
 
 .subtitle {
@@ -64,60 +60,4 @@
   margin: 0 auto;
   margin-top: 32px;
   max-width: 550px;
-}
-
-
-.typewriter {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid var(--accent);
-  /* The typwriter cursor */
-  // white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em;
-  /* Adjust as needed */
-  animation:
-    typing 4.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-.typewriterParagraph {
-  overflow: hidden;
-  /* Ensures the content is not revealed until the animation */
-  border-right: .1em solid var(--accent);
-  /* The typwriter cursor */
-  // white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto;
-  /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .1em;
-  /* Adjust as needed */
-  color: white;
-  animation:
-    typing 3.5s steps(40, end),
-    blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0
-  }
-
-  to {
-    width: 100%
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-
-  from,
-  to {
-    border-color: transparent
-  }
-
-  50% {
-    border-color: var(--accent);
-  }
 }
