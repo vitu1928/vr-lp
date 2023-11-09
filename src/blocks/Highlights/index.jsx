@@ -14,7 +14,10 @@ export default function Highlights(p) {
         {highlightsJSON.map((item, i) => {
           return (
             <li key={i} className={highlight}>
-              <div className={styles['highlight-illustration']}/>
+              <div className={styles['highlight-illustration']} style={{
+                backgroundImage: `url(${item.illustration})`,
+                backgroundPosition: item.position,
+              }}/>
               <div className={styles['highlight-content']}>
                 <h3 className={styles['highlight-title']}>{item.title}</h3>
                 <p className={styles['highlight-text']}>{item.text}</p>

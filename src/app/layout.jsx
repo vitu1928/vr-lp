@@ -42,7 +42,7 @@ export const metadata = {
         height: 500,
       },
       {
-        url: 'Images/tilografar.png',
+        url: 'Images/contratado.jpg',
         width: 1900,
         height: 1700,
         alt: 'Máquina de tilografar',

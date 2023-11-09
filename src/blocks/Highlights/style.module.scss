@@ -83,7 +83,11 @@
     justify-content: stretch;
     max-width: initial;
   }
-  .highlight-illustration {}
+  .highlight-illustration {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .highlight-content {
     flex: 1 1 0;
     margin-left: 48px;

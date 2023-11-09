@@ -35,9 +35,15 @@
 }
 
 .illustration {
-  width: 320px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-image: url("../../../public/Images/porta.jpg");
+  background-color: #eee;
+
   height: 240px;
   margin: 0 auto;
-  background: #eee;
+  box-shadow: inset 0px 0px 20px 20px rgba(0, 0, 0, 0.7);
   border-radius: 8px;
 }
