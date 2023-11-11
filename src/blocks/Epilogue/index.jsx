@@ -7,7 +7,7 @@ export default function Epilogue() {
     <Section id="epilogue" background="accent" className={container}>
       <div className={illustration} />
       <div className={header}>
-        <h2 className={title}>Otimizado para o Sucesso</h2>
+        <h2 className={title}><span>Otimizado para o Sucesso</span></h2>
         <div className={subtitle}>Comece hoje a investir em seu sucesso profissional. Vamos criar um currículo que o destaque, abrindo portas e criando oportunidades. Sua carreira merece isso. Você merece isso.</div>
         <SubscribeInput className={subscribe} location="accent" placeholder="you@email.com" action="When is it ready?" />
       </div>

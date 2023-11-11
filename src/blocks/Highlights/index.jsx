@@ -6,7 +6,7 @@ export default function Highlights(p) {
   return (
     <Section id={p.id} background={p.background}>
       <div className={header}>
-        <h2 className={title}>Deixe seu Currículo Falar por Você</h2>
+        <h2 className={title}><span>Deixe seu Currículo Falar por Você</span></h2>
         <p className={subtitle}>Design Personalizado</p>
       </div>
 
