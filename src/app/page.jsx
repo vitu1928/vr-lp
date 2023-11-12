@@ -1,7 +1,7 @@
 import Script from 'next/script'
 
 export default function Page() {
-    return <Script>
+  return <Script>
     {
       (function (w, d, s, l, i) {
         w[l] = w[l] || []; w[l].push({

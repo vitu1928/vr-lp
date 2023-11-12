@@ -41,19 +41,19 @@ export const metadata = {
   openGraph: {
     title: 'VR Currículo',
     description: 'Faça seu currículo com a VR Currículo e consiga o emprego dos seus sonhos!',
-    url: 'https://vrcurriculo.com.br',
+    url: 'https://www.curriculosprofissionais.com.br/',
     siteName: 'VR Currículo',
     images: [
       {
-        url: 'Images/pen.avif',
-        width: 900,
-        height: 500,
+        url: 'Images/porta.jpg',
+        width: 1280,
+        height: 853,
       },
       {
         url: 'Images/contratado.jpg',
         width: 1900,
         height: 1700,
-        alt: 'Máquina de tilografar',
+        alt: 'Contratado',
       },
       {
         url: 'android-chrome-512x512.png',
@@ -68,6 +68,11 @@ export const metadata = {
         alt: 'Logo da VR Currículo',
       }
     ],
+    icons: {
+      icon: '/favicon.ico',
+      shortcut: '/android-chrome-512x512.png',
+      apple: '/favicon.ico'
+    },  
     locale: 'pt_BR',
     type: 'profile',
     manifest: "https://www.curriculosprofissionais.com.br/manifest.json",
