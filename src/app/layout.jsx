@@ -14,10 +14,16 @@ import Relevance from '../blocks/Relevance';
 export const metadata = {
   title: 'VR Currículo',
   description: "Landing page para o produto VR Currículo",
+  summary: "Currículo Personalizado e profissional em 48h",
+  category: 'curriculo',
+  topic: 'CV',
+  language: 'pt-br',
+  robots: 'index, follow',
+  revised: 'Domingo, Novembro 12, 2023, 11:00',
   generator: 'Next.js',
   applicationName: 'VR Currículo',
   referrer: 'origin-when-cross-origin',
-  keywords: ['VR', 'Currículo', 'curriculum'],
+  keywords: ['VR', 'Currículo Profissionais', 'curriculum', "Currículos"],
   authors: [
     { name: 'Victor Garcia Torrens', url: "https://github.com/vitu1928" },
     { name: 'Yuri Garcia Torrens', url: 'https://trello.com/u/yurigarciatorrens/' },
@@ -26,6 +32,7 @@ export const metadata = {
   colorScheme: 'white',
   creator: 'Vaness Rebouças Garcia',
   publisher: 'Victor Garcia Torrens',
+  designer: "Victor Garcia Torrens",
   formatDetection: {
     email: true,
     address: false,
@@ -63,14 +70,12 @@ export const metadata = {
     ],
     locale: 'pt_BR',
     type: 'profile',
-    manifest: "/manifest.json",
-    alternates: {
-      canonical: '/',
-      languages: {
-        'pt-BR': '/pt-BR'
-      },
-    },
-  
+    manifest: "https://www.curriculosprofissionais.com.br/manifest.json",
+    canonical: '/',
+    url: "https://www.curriculosprofissionais.com.br/",
+    "identifier-URL": "https://www.curriculosprofissionais.com.br/",
+    pagename: "VR Currículo",
+    subtitle: "Currículo Personalizado e profissional em 48h"
   }
 }
 
