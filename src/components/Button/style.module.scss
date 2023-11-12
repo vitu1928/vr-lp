@@ -15,15 +15,15 @@
 .container-size-large {
   height: 48px;
   padding: 0 24px;
-  font-size: 16px;
+  font-size: var(--body-font-size);
 }
 
 .container-size-normal {
   display: inline-flex;
   align-items: center;
-  height: 32px;
+  height: 7vh;
   padding: 0 12px;
-  font-size: 14px;
+  font-size: var(--body-font-size);
 }
 
 .container-type-primary.container-location-body {

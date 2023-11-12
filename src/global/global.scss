@@ -30,6 +30,9 @@
   --text-accent: #fff;
   --text-accent-shade: #fffA;
   --accent: #3edd7a;
+  --accent-h: 143;
+  --accent-s: 70%;
+  --accent-l: 55%;
 
   --body-font-size: clamp(2.1vh, 1.3vw, 2.5vw);
   --body-font-weight: 400;
@@ -115,4 +118,5 @@ input {
 
 ul, li {
   list-style-type: none;
+  padding: 0;
 }

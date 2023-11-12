@@ -9,6 +9,7 @@ import Hero from '@blocks/Hero';
 import Highlights from '@blocks/Highlights';
 import Whatsappfixed from '@components/WhatsappFixed'
 import '../global/global.scss';
+import Relevance from '../blocks/Relevance';
 
 export const metadata = {
   title: 'VR Currículo',
@@ -73,12 +74,22 @@ export const metadata = {
 // }
 
 export default function Home() {
+
   return (
     <html lang="pt-br">
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-5BFSRBXJ"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        />
+      </noscript>
       <Header />
-        <Whatsappfixed />
+      <Whatsappfixed />
       <main>
         <Hero />
+        <Relevance />
         <Benefits />
         {/* <Break /> */}
         <Highlights />

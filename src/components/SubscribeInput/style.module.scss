@@ -1,11 +1,12 @@
 .container {
-  position: relative;
+  left: 25vw;
+  bottom: 2vh;
+  width: 50%;
+  position: fixed;
   display: flex;
   align-items: stretch;
-  box-shadow: 0 4px 18px #0002;
   border-radius: 7px;
   padding: 0.5vw;
-  // background: #fff;
   overflow: hidden;
 
   a {
