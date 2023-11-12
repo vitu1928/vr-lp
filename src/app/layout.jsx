@@ -82,7 +82,10 @@ export default function Home() {
           src="https://www.googletagmanager.com/ns.html?id=GTM-5BFSRBXJ"
           height="0"
           width="0"
-          style="display:none;visibility:hidden"
+          style={{
+            display: "none",
+            visibility: "hidden"
+          }}
         />
       </noscript>
       <Header />
