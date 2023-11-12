@@ -63,6 +63,14 @@ export const metadata = {
     ],
     locale: 'pt_BR',
     type: 'profile',
+    manifest: "/manifest.json",
+    alternates: {
+      canonical: '/',
+      languages: {
+        'pt-BR': '/pt-BR'
+      },
+    },
+  
   }
 }
 
