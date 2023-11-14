@@ -1,5 +1,6 @@
 import Break from '@blocks/Break';
 import Features from '@blocks/Features';
+import GoogleTagManager from '@magicul/next-google-tag-manager';
 
 import Benefits from '@blocks/Benefits';
 import Epilogue from '@blocks/Epilogue';
@@ -8,8 +9,9 @@ import Header from '@blocks/Header';
 import Hero from '@blocks/Hero';
 import Highlights from '@blocks/Highlights';
 import Whatsappfixed from '@components/WhatsappFixed'
-import '../global/global.scss';
 import Relevance from '../blocks/Relevance';
+
+import '../global/global.scss';
 
 export const metadata = {
   title: 'VR Currículo',
@@ -95,17 +97,7 @@ export default function Home() {
 
   return (
     <html lang="pt-br">
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-5BFSRBXJ"
-          height="0"
-          width="0"
-          style={{
-            display: "none",
-            visibility: "hidden"
-          }}
-        />
-      </noscript>
+      <GoogleTagManager id="GTM-5BFSRBXJ"/>
       <Header />
       <Whatsappfixed />
       <main>
