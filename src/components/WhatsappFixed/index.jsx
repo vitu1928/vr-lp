@@ -6,11 +6,13 @@ import Whatsapp from "../../../public/Images/whatsapp.png"
 
 export default function Whatsappfixed() {
     return (
-        <a className={WhatsappFixedS} href="https://api.whatsapp.com/send?phone=5511956600892">
+        <a className={WhatsappFixedS} href="https://api.whatsapp.com/send?phone=5511956600892"
+        aria-label="Whatsapp de VR">
             <div>
                 <Image
                     src={Whatsapp}
                     layout="responsive"
+                    alt="Whatsapp icon"
                 />
             </div>
         </a>

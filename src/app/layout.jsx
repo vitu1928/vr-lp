@@ -47,15 +47,15 @@ export const metadata = {
     siteName: 'VR Currículo',
     images: [
       {
-        url: 'Images/porta.jpg',
+        url: 'Images/porta.webp',
         width: 1280,
         height: 853,
         alt: "Porta de entrada para o emprego dos seus sonhos"
       },
       {
-        url: 'Images/contratado.jpg',
-        width: 1900,
-        height: 1700,
+        url: 'Images/contratado.webp',
+        width: 1000,
+        height: 668,
         alt: 'Contratado',
       },
       {

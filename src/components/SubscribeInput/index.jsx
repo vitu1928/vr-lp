@@ -11,7 +11,7 @@ export default function SubscribeInput(p) {
       <div className={[container, styles[`container-location-${location}`]].join(" ")}>
         <a href={
           `https://wa.me/5511956600892?text=${encodeURIComponent("Obtenha Seu Currículo profissional Agora")}`
-        } rel='_external' target='_blank'>
+        } rel='_external' target='_blank' aria-label="Whatsapp de VR">
           <Button className={button} size="large">
             Contate-nos
           </Button>
