@@ -17,7 +17,7 @@ export const metadata = {
   title: 'VR Currículo',
   description: "Landing page para o produto VR Currículo",
   summary: "Currículo Personalizado e profissional em 48h",
-  category: 'curriculo',
+  category: ['curriculo', 'curriculum', 'emprego', 'trabalho', 'profissional', 'profissão', 'empregabilidade', 'empregado', 'empregabilidade'],
   topic: 'CV',
   language: 'pt-br',
   robots: 'index, follow',
@@ -50,6 +50,7 @@ export const metadata = {
         url: 'Images/porta.jpg',
         width: 1280,
         height: 853,
+        alt: "Porta de entrada para o emprego dos seus sonhos"
       },
       {
         url: 'Images/contratado.jpg',
@@ -58,23 +59,36 @@ export const metadata = {
         alt: 'Contratado',
       },
       {
-        url: 'android-chrome-512x512.png',
-        width: 512,
-        height: 512,
+        url: 'favicon.ico',
+        width: 64,
+        height: 64,
         alt: 'Logo da VR Currículo',
       },
+    ],
+    icons: [
       {
-        url: 'favicon.ico',
-        width: 128,
-        height: 128,
-        alt: 'Logo da VR Currículo',
+        "src": "favicon.ico",
+        "sizes": "48x48",
+        "type": "image/x-icon"
+      },
+      {
+        "src": "Images/Icons/VR_128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "Images/Icons/VR_256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "Images/Icons/VR_512.png",
+        "sizes": "512X512 1024x1024",
+        "type": "image/png"
       }
     ],
-    icons: {
-      icon: '/favicon.ico',
-      shortcut: '/android-chrome-512x512.png',
-      apple: '/favicon.ico'
-    },  
+    
+    display: "standalone",
     locale: 'pt_BR',
     type: 'profile',
     manifest: "https://www.curriculosprofissionais.com.br/manifest.json",
@@ -102,12 +116,12 @@ export default function Home() {
       <Whatsappfixed />
       <main>
         <Hero />
-        <Relevance />
-        <Benefits />
+        <Relevance id="relevance"/>
+        <Benefits id="benefits"/>
         {/* <Break /> */}
-        <Highlights />
+        <Highlights id="highlights"/>
         {/* <Features /> */}
-        <Epilogue />
+        <Epilogue id="epilogue"/>
       </main>
       <Footer />
     </html>
