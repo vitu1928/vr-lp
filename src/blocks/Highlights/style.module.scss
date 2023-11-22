@@ -1,6 +1,4 @@
-.container {
-
-}
+.container {}
 
 .header {
   max-width: var(--section-header-max-width);
@@ -39,19 +37,23 @@
   margin: 0 auto;
   margin-bottom: 48px;
 }
+
 .highlight:nth-child(even) {
   flex-direction: row-reverse;
 }
+
 .highlight:last-child {
   margin-bottom: 0;
 }
 
 .highlight-illustration {
+  background-size: cover;
+
   min-width: 30vw;
   max-width: 100%;
   max-height: 50vh;
   min-height: 20vh;
-  background: #eee;
+  background-color: #eee;
   border-radius: 8px;
 
   border-right: 6px solid var(--accent);
@@ -83,16 +85,19 @@
     justify-content: stretch;
     max-width: initial;
   }
+
   .highlight-illustration {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
   .highlight-content {
     flex: 1 1 0;
     margin-left: 48px;
     margin-top: 0;
   }
+
   .highlight:nth-child(even) .highlight-content {
     margin-left: 0;
     margin-right: 48px;

@@ -9,11 +9,7 @@ export default function Relevance(p) {
 
       </div>
       <ul className={list}>
-        <span>
-          FALTA
-        </span>
         <li>
-          {/* <h3>Falta</h3> */}
           <h3>Relevância</h3>
           <cite>Currículo sem destaque para experiências relevantes pode fazer com que o empregador veja o candidato como inadequado para a vaga.</cite>
         </li>
@@ -29,9 +25,6 @@ export default function Relevance(p) {
           <h3>Personalização</h3>
           <cite>Currículos genéricos podem não atrair a atenção do empregador, que interpreta isso como falta de interesse genuíno na posição.</cite>
         </li>
-        <span>
-          FALTA
-        </span>
       </ul>
     </Section>
   );
