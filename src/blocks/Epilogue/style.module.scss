@@ -52,7 +52,10 @@
   }
 
   @supports (-webkit-touch-callout: none) {
-    background-size: contain !important;
+    background-attachment: local !important;
+  }
+
+  @supports ((-webkit-hyphens:none)) and ((-moz-appearance:none)) and (not (list-style-type:"*")) {
     background-attachment: local !important;
   }
 }

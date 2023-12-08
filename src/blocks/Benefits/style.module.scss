@@ -95,6 +95,12 @@
   }
 }
 
+@supports ((-webkit-hyphens:none)) and ((-moz-appearance:none)) and (not (list-style-type:"*")) {
+  .benefit-illustration {
+    background-attachment: local !important;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .benefit-illustration {
     background-attachment: local !important;
