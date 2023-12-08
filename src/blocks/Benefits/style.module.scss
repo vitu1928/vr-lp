@@ -88,11 +88,18 @@
   color: var(--text-shade);
 }
 
+@supports (-webkit-touch-callout: none) {
+  .benefit-illustration {
+    background-size: contain !important;
+    background-attachment: local !important;
+  }
+}
+
 @media screen and (min-width: 800px) {
   .benefit-illustration {
     background-attachment: local !important;
   }
-
+ 
   .benefits {
     display: flex;
     align-items: stretch;

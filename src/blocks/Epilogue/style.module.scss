@@ -50,4 +50,9 @@
   @media screen and (max-width: 470px) {
     transform: translate(10px, 10px);
   }
+
+  @supports (-webkit-touch-callout: none) {
+    background-size: contain !important;
+    background-attachment: local !important;
+  }
 }
