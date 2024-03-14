@@ -1,6 +1,8 @@
 import Section from '@components/Section';
-import benefitsJSON from './benefits.json';
 import styles, { benefit, benefits, header, subtitle, title } from './style.module.scss';
+import Image from 'next/image';
+import VictorHugo from "../../../public/Images/Curriculums/1.jpeg"
+import Another from "../../../public/Images/Curriculums/3.webp"
 
 export default function Benefits(p) {
   return (
@@ -11,20 +13,29 @@ export default function Benefits(p) {
       </div>
 
       <ul className={benefits}>
-        {benefitsJSON.map((item, i) => {
-          return (
-            <li key={i} className={benefit}>
-              <div className={styles['benefit-illustration']} style={{
-                backgroundImage: `url(${item.illustration})`,
-                backgroundPosition: item.position,
-              }}/>
-              <div className={styles['benefit-content']}>
-                <h3 className={styles['benefit-title']}>{item.title}</h3>
-                <p className={styles['benefit-text']}>{item.text}</p>
-              </div>
-            </li>
-          );
-        })}
+        <li key={1} className={benefit}>
+          <Image
+            src={VictorHugo}
+            objectFit="contain"
+            layout="responsive"
+          />
+          <div className={styles['benefit-content']}>
+            <h3 className={styles['benefit-title']}>Destaque suas Conquistas</h3>
+            <p className={styles['benefit-text']}>Transformamos suas experiências em narrativas que impressionam. Suas realizações são destacadas, não enterradas em uma lista de tarefas.</p>
+          </div>
+        </li>
+        <li key={2} className={benefit}>
+
+          <Image
+            src={Another}
+            objectFit="contain"
+            layout="responsive"
+          />
+          <div className={styles['benefit-content']}>
+            <h3 className={styles['benefit-title']}>Layout Profissional</h3>
+            <p className={styles['benefit-text']}>Garantimos um design limpo e atraente que chama a atenção e torna a leitura fácil e agradável</p>
+          </div>
+        </li>
       </ul>
     </Section>
   );
