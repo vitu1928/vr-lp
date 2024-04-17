@@ -117,7 +117,7 @@ export default function Home() {
       <main>
         <Hero />
         <Relevance id="relevance"/>
-        <Benefits id="benefits"/>
+        {/* <Benefits id="benefits"/> */}
         {/* <Break /> */}
         <Highlights id="highlights"/>
         {/* <Features /> */}
