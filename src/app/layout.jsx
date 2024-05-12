@@ -29,7 +29,7 @@ export const metadata = {
   authors: [
     { name: 'Victor Garcia Torrens', url: "https://github.com/vitu1928" },
     { name: 'Yuri Garcia Torrens', url: 'https://trello.com/u/yurigarciatorrens/' },
-    { name: 'Vanessa Rebouças Garcia', url: 'https://wa.me/5511956600892' }
+    { name: 'Vanessa Rebouças Garcia', url: 'https://wa.me/5511942750050' }
   ],
   colorScheme: 'white',
   creator: 'Vaness Rebouças Garcia',
