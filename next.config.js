@@ -21,5 +21,15 @@ module.exports = {
         }
       ]
     }
-  ]
+  ],
+  async redirects() {
+    return [
+      {
+        source: '/redireciona',
+        destination: 'https://api.whatsapp.com/send?phone=5511942750050',
+        permanent: false,
+        basePath: false
+      },
+    ]
+  },
 };
