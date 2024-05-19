@@ -1,4 +1,4 @@
-import GoogleTagManager from '@magicul/next-google-tag-manager';
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 import Epilogue from '@blocks/Epilogue';
 import Footer from '@blocks/Footer';
@@ -107,8 +107,10 @@ export const metadata = {
 export default function Home() {
   return (
     <html lang="pt-br">
-      <GoogleTagManager id="GTM-5BFSRBXJ"/>
-      <GoogleTagManager id="AW-11381458383"/>
+      {/* <GoogleTagManager id="GTM-5BFSRBXJ"/> */}
+      {/* <GoogleTagManager id="AW-11381458383"/> */}
+      <GoogleAnalytics gaId="GTM-5BFSRBXJ" />
+      <GoogleAnalytics gaId="AW-11381458383" />
       <Header />
       <Whatsappfixed />
       <main>
