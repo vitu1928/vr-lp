@@ -1,14 +1,11 @@
-import Break from '@blocks/Break';
-import Features from '@blocks/Features';
 import GoogleTagManager from '@magicul/next-google-tag-manager';
 
-import Benefits from '@blocks/Benefits';
 import Epilogue from '@blocks/Epilogue';
 import Footer from '@blocks/Footer';
 import Header from '@blocks/Header';
 import Hero from '@blocks/Hero';
 import Highlights from '@blocks/Highlights';
-import Whatsappfixed from '@components/WhatsappFixed'
+import Whatsappfixed from '@components/WhatsappFixed';
 import Relevance from '../blocks/Relevance';
 
 import '../global/global.scss';
@@ -108,10 +105,10 @@ export const metadata = {
 // }
 
 export default function Home() {
-
   return (
     <html lang="pt-br">
       <GoogleTagManager id="GTM-5BFSRBXJ"/>
+      <GoogleTagManager id="AW-11381458383"/>
       <Header />
       <Whatsappfixed />
       <main>
