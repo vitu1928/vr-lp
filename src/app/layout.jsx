@@ -84,7 +84,7 @@ export const metadata = {
         "type": "image/png"
       }
     ],
-    
+
     display: "standalone",
     locale: 'pt_BR',
     type: 'profile',
@@ -105,25 +105,23 @@ export const metadata = {
 // }
 
 export default function Home() {
+ 
   return (
-    <html lang="pt-br">
-      {/* <GoogleTagManager id="GTM-5BFSRBXJ"/> */}
-      {/* <GoogleTagManager id="AW-11381458383"/> */}
-      <GoogleAnalytics gaId="GTM-5BFSRBXJ" />
-      <GoogleAnalytics gaId="AW-11381458383" />
-      <Header />
-      <Whatsappfixed />
-      <main>
-        <Hero />
-        <Relevance id="relevance"/>
-        {/* <Benefits id="benefits"/> */}
-        {/* <Break /> */}
-        <Highlights id="highlights"/>
-        {/* <Features /> */}
-        <Epilogue id="epilogue"/>
-      </main>
-      <Footer />
-    </html>
+      <html lang="pt-br">
+        <GoogleAnalytics gaId="GTM-5BFSRBXJ" />
+        <Header />
+        <Whatsappfixed />
+        <main>
+          <Hero />
+          <Relevance id="relevance" />
+          {/* <Benefits id="benefits"/> */}
+          {/* <Break /> */}
+          <Highlights id="highlights" />
+          {/* <Features /> */}
+          <Epilogue id="epilogue" />
+        </main>
+        <Footer />
+      </html>
   )
 }
 // 
