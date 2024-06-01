@@ -108,7 +108,7 @@ export default function Home() {
 
   return (
     <html lang="pt-br">
-      <head>
+      <head>                                                      
         <script
           id="tagmanager-main"
           strategy="afterInteractive"
