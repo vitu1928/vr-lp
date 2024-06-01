@@ -23,5 +23,6 @@ export default function Page() {
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BFSRBXJ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe>
     </noscript>
-
+ 
 }
+// https://api.whatsapp.com/send?phone=5511942750050
