@@ -105,23 +105,50 @@ export const metadata = {
 // }
 
 export default function Home() {
- 
+
   return (
-      <html lang="pt-br">
-        <GoogleAnalytics gaId="GTM-5BFSRBXJ" />
-        <Header />
-        <Whatsappfixed />
-        <main>
-          <Hero />
-          <Relevance id="relevance" />
-          {/* <Benefits id="benefits"/> */}
-          {/* <Break /> */}
-          <Highlights id="highlights" />
-          {/* <Features /> */}
-          <Epilogue id="epilogue" />
-        </main>
-        <Footer />
-      </html>
+    <html lang="pt-br">
+      <head>
+        <script
+          id="tagmanager-main"
+          strategy="afterInteractive"
+          async
+          src={`https://www.googletagmanager.com/gtag/js?id=GTM-5BFSRBXJ`}
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+                        window.dataLayer = window.dataLayer || [];
+                        function gtag(){dataLayer.push(arguments);}
+                        gtag('js', new Date());
+                        gtag('config', 'GTM-5BFSRBXJ', {
+                        page_path: window.location.pathname,
+                        });
+                    `,
+          }}
+        />
+      </head>
+      <GoogleAnalytics gaId="GTM-5BFSRBXJ" />
+      <Header />
+      <Whatsappfixed />
+      <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BFSRBXJ"
+          height="0" width="0" style={{
+            display: "none",
+            visibility: "hidden"
+          }}></iframe>
+      </noscript>
+      <main>
+        <Hero />
+        <Relevance id="relevance" />
+        {/* <Benefits id="benefits"/> */}
+        {/* <Break /> */}
+        <Highlights id="highlights" />
+        {/* <Features /> */}
+        <Epilogue id="epilogue" />
+      </main>
+      <Footer />
+    </html>
   )
 }
 // 
