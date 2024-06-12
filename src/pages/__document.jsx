@@ -1,8 +1,8 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
     return (
-        <Html lang="pt-br">
+        <html lang="pt-br">
             <Head>
                 <script
                     id="tagmanager-main"
@@ -34,6 +34,6 @@ export default function Document() {
                 </noscript>
                 <NextScript />
             </body>
-        </Html>
+        </html>
     )
 }
