@@ -1,9 +1,9 @@
 <p align="center">
-    <img src="https://www.curriculosprofissionais.com.br/Images/Icons/VR_256.png" alt="MotoPlay's Logo" width="300px">
+    <img src="https://vr-lp.vercel.app/Images/Icons/VR_256.png" alt="VR logo" width="100px">
 </p>
 
 <h1 align="center">
-    <a href="https://www.curriculosprofissionais.com.br/">Currículos profissionais</a>
+    <a href="https://vr-lp.vercel.app/">Currículos profissionais</a>
 </h1>
 <div align="center">
     <ul type="none" align="center">
